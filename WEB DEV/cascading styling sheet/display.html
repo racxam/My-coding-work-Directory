@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property of CSS</title>
+    <style>
+        .one{
+            height: 400px;
+            width: 200px;
+            font-size: 14pt;
+            /* display: inline;  *//* now we can not set width,height,  top ki [margin,padding ]of an inline element  */
+            display: inline-block;/* now we can set all height width margin padding  this is the quality of inline block*/
+
+
+
+background-color: red;
+        }
+        .two{
+            height: 400px;
+            width: 200px;
+            font-size: 14pt;
+            /* display: inline;now we can not set width,height, top ki [margin,padding ] of an inline element  */
+            display: inline-block; 
+            /* now we can set all height width margin padding  this is the quality of inline block
+             */ 
+
+
+        
+background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">Lorem ipsum dolor sit amet consectetur.</div>
+    <div class="two">Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam praesentium eius voluptatibus deleniti unde. Vel, illum pariatur necessitatibus cupiditate iste eligendi aliquid expedita similique earum ipsam veniam odit quae dolore.
+
+    </div>
+</body>
+</html>

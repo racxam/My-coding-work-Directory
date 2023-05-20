@@ -1,0 +1,6 @@
+f=open('sumit.txt','r')
+data= f.readline()
+print(data)
+data= f.readline()
+print(data)
+f.close()

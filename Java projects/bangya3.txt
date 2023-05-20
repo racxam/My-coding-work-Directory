@@ -1,0 +1,170 @@
+import java.util.Scanner;
+
+import java.lang.Math;
+
+abstract class Account{
+
+abstract public void calculateInterest();
+}
+class FD extends Account{
+    Double Amount;
+    Double InterestRate;
+
+    @Override
+    public void calculateInterest() {
+        System.out.println("Here we are calculating FD INTEREST");
+        System.out.println("Enter the Prinipal Amount");
+        System.out.println("Calculated Interest for FD is: ");
+        
+    }
+
+}
+class RD extends Account{
+    Double Amount;
+    Double InterestRate;
+    int age;
+
+    int t;
+    int quat;
+    Double MAmount;
+    public void getRD(){
+        System.out.println("Enter the prinicpal Amount: ");
+        Scanner fds=new Scanner(System.in);
+        Amount= fds.nextDouble();
+        
+        try{
+
+            System.out.println("Enter Your age: ");
+            age= fds.nextInt();
+        }
+        catch(Exception e){
+            System.out.println("Enter correct age");
+        }
+        
+        System.out.println("Enter maturity priod in months : ");
+        t= fds.nextInt();
+
+        quat=t/4;
+
+
+     }
+
+    @Override
+    public void calculateInterest(){
+        if(Amount>10000000){
+            System.out.println("This is calculated for the amount that are greater than 1 crore: --->");
+            if(age>60){// for seniors 
+                
+                InterestRate=(quat<=2) ? 7.50 :((quat<=3 && quat>2) ? 7.75:((quat<=4 && quat>3)? 8.00 :((quat<=5 && quat >4)? 8.25:((quat<=6 && quat >5)?8.50 :((quat<=7 && quat>6)?8.75:-1)) )));
+                if(InterestRate!=-1){
+                    System.out.println("The Interest Rate(General) for Amount "+Amount+" is :-> "+InterestRate);
+                }
+                else{
+                    System.out.println("Can't Calculate");
+                }
+            }
+            else{// for juniors
+                InterestRate=(quat<=2) ? 8.00 :((quat<=3 && quat>2) ? 8.25:((quat<=4 && quat>3)? 8.50 :((quat<=5 && quat >4)? 8.75:((quat<=6 && quat >5)?9.00 :((quat<=7 && quat>6)?9.25:-1)) )));
+                if(InterestRate!=-1){
+                    System.out.println("The Interest Rate(Senior Citizen) for Amount "+Amount+" is :-> "+InterestRate);
+                }
+                else{
+                    System.out.println("Can't Calculate");
+                }
+                
+            }
+            
+        }
+        // amount greater than 1 crore
+        else{
+            System.out.println("This is calculated for the amount that are lesser than 1 crore: --->");
+            if(age>60){// for seniors 
+                
+                InterestRate=(quat<=2) ? 5.50 :((quat<=3 && quat>2) ? 5.75:((quat<=4 && quat>3)? 6.00 :((quat<=5 && quat >4)? 6.25:((quat<=6 && quat >5)?6.50 :((quat<=7 && quat>6)?6.75:-1)) )));
+                if(InterestRate!=-1){
+                    System.out.println("The Interest Rate(General) for Amount "+Amount+" is :-> "+InterestRate);
+                }
+                else{
+                    System.out.println("Can't Calculate");
+                }
+            }
+            else{// for juniors
+                InterestRate=(quat<=2) ? 7.00 :((quat<=3 && quat>2) ? 7.25:((quat<=4 && quat>3)? 7.50 :((quat<=5 && quat >4)? 7.75:((quat<=6 && quat >5)?8.00 :((quat<=7 && quat>6)?8.25:-1)) )));
+                if(InterestRate!=-1){
+                    System.out.println("The Interest Rate(General) for Amount "+Amount+" is :-> "+InterestRate);
+                }
+                else{
+                    System.out.println("Can't Calculate");
+                }
+
+            }
+
+        }
+
+        // now we'ill calculate the intersest
+        MAmount=Amount*(Math.pow((1+InterestRate),((double)(4*(t/12))))-1);
+        System.out.println(Math.pow((1+InterestRate),(4*(t/12))));
+        System.out.println(Amount*Math.pow((1+InterestRate),4*(t/12)));
+
+        System.out.println("Interest on the Above amount is: "+MAmount);
+        
+        
+    }
+
+}
+class SB extends Account{
+    Double Amount;
+    Double InterestRate;
+
+    @Override
+    public void calculateInterest(){
+        System.out.println("Here we are calculating SB INTEREST");
+        System.out.println("Enter the Prinipal Amount");
+        System.out.println("Calculated Interest for SB is: ");
+        
+        
+    }
+
+}
+public class worksheet3 {
+    public static void main(String[] args) {
+        
+        System.out.println("------------WELCOME TO SUMIT'S INTEREST CALCULATOR---------");
+        System.out.println("\t----->MAIN MENU<----------");
+        System.out.println("Choose Any one of the following");
+        System.out.println("1. CALCULATE FD INTEREST");
+        System.out.println("2. CALCULATE RD INTEREST");
+        System.out.println("3. CALCULATE SB INTEREST");
+        System.out.println("4. EXIT THE CALCULATOR");
+        Scanner o= new Scanner(System.in);
+        int i=o.nextInt();
+        switch (i) {
+            case 1:
+                Account c1=new FD();
+                
+                break;
+                
+
+            case 2:
+                 RD c2= new RD();
+                 c2.getRD();
+                 c2.calculateInterest();
+                
+                break;
+
+            case 3:
+                 Account c3= new SB();
+                
+                break;
+
+            case 4:
+                System.exit(0);
+                break;
+                
+            default:
+                System.out.println("Enter the Right Choice");
+                break;
+        }
+        o.close();
+    }
+}

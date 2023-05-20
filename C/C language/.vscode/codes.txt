@@ -1,0 +1,99 @@
+#include<fstream>
+#include<iostream>
+using namespace std;
+int main()
+{
+    ifstream sin;
+    sin.open("Sumit.txt");
+    
+  char strine[100];
+    int cou=0;
+    int cou1=0;
+    
+    while(!sin.eof())
+    {
+        sin.getline(strine,100);
+        if(strine[0]!='A')
+        {
+            cou++;
+        }
+        else if(strine[0]=='A'&&strine[1]==' ')
+        {
+            cou1++;
+        }
+    }
+    
+    cout<<"The number of lines not starting with 'A' are:"<<cou<<"\n";
+    cout<<"The number of lines starting with 'A' are:"<<cou1<<"\n";
+    
+    sin.close();
+    return 0;
+}
+
+ 
+Question 3
+2 Points
+Give the output of the following program
+   By seeing which operator thus this program stops getting the input?
+   #include <iostream>
+   #include <fstream>
+   using namespace std;
+   int main ()
+   {
+          char ch;
+streambuf * p;
+ofstreamos ("test.txt");
+pbuf = os.rdbuf();
+       do {
+ch = cin.get();
+p ->sputc(ch);
+       } while (ch != '.');
+       os.close();
+       return 0;
+ }
+ This program will stop getting input by seeing dot operator.
+
+ 
+Question 4
+2 Points
+Assuming that a text file named FIRST.TXT contains some text written into it, write a function named vowelwords(), that reads the file FIRST.TXT and creates a new file named SECOND.TXT, to contain only those words from the file FIRST.TXT which start with a lowercase vowel (i.e., with 'a', 'e', 'i', 'o', 'u'). For example, if the file FIRST.TXT contains Carry umbrella and overcoat when it rains Then the file SECOND.TXT shall contain umbrella and overcoat it.
+
+ 
+Question 5
+2 Points
+What is the output of this program?
+   #include <iostream>
+   #include <fstream>
+   using namespace std;
+   int main ()
+   {
+int length;
+char * buffer;
+ifstream is;
+is.open ("sample.txt", ios :: binary );
+is.seekg (0, ios :: end);
+       length = is.tellg();
+is.seekg (0, ios :: beg);
+       buffer = new char [length];
+is.read (buffer, length);
+is.close();
+cout.write (buffer, length);
+delete[] buffer;
+           return 0;
+   }
+
+ 
+Do you have additional content?
+You can add text, images, and files that support your answers.
+ Add Content
+Details & Information
+
+Assessment due date
+2/3/21, 12:00 AM (UTC+5:30)
+Attempts
+1 attempt left
+Grading
+Maximum points
+10 points
+Description
+This assignment is based on Unit3 topics.

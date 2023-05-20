@@ -1,0 +1,47 @@
+#include<iostream>
+using namespace std;
+class A{
+    public:
+    int x;
+    void getx(int x){
+        cout<<"enter the value of the x"<<endl;
+        cin>>x;
+    }
+};
+class B:public A{
+    public:
+    int y;
+    void gety(){
+        cout<<"enter the value of the y"<<endl;
+        cin>>y;
+    }
+};
+class C:public A{
+    public:
+    int z;
+    void getz(){
+        cout<<"enter the value of z"<<endl;
+        cin>>z;
+    }
+};
+class D:public B,public C{
+    public:
+    void multi(){
+        cout<<"the multiplication of the enter x*y*z is:"<<x*y*z<<endl;
+    }
+}
+
+int main(){
+   A a;
+   a.getx();
+   B b;
+   b.gety();
+   C c;
+   c.getz();
+   D d;
+   d.multi();
+
+
+
+    return 0;
+}

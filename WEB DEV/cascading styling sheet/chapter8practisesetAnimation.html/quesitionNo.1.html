@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotating Image Animation </title>
+    <style>
+        .imageContainer{
+            height: 800px;
+            width: 1400px;
+            border: 10px solid black;
+
+            display: flex;
+            flex-direction: row;
+            
+            justify-content: center;
+            /* align-content:center; */
+
+        }
+       img{
+           height: 400px; 
+           width: 400px;
+           align-self: center;
+           animation: rotate 0.1s  infinite ;
+        }
+        @keyframes rotate {
+            0%
+        {
+            rotate: 0deg;
+        }
+        25%{
+
+            rotate:90deg;
+        }
+        50%{
+
+            rotate:180deg;
+        }
+        75%{
+
+            rotate:270deg;
+        }
+        100%{
+
+            rotate:3600deg;
+        }
+            
+        }
+    </style>
+<body>
+   <div class="imageContainer">
+       <img src="/sumit.jpeg" alt="This is the image of the owner of this macbook air" >
+   </div> 
+</body>
+</html>

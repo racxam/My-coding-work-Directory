@@ -1,0 +1,35 @@
+{
+    "java.debug.settings.onBuildFailureProceed": true,
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "xprotocol"
+            },
+            "previewLimit": 5000,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "RacxamC",
+            "database": "demo",
+            "username": "root",
+            "password": "rootroot"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "sumit",
+            "database": "demo",
+            "username": "root",
+            "password": "rootroot"
+        }
+    ],
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/Users/sumitkumar/Documents/mysql-connector-j-8.0.32/mysql-connector-j-8.0.32.jar"
+    ]
+}

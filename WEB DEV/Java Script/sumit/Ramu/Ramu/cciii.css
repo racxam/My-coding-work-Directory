@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%); */
+    background-image: url('https://images.pexels.com/photos/1029604/pexels-photo-1029604.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+    background-size: cover;
+   
+
+    
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-content:space-between;
+    justify-content: space-evenly;
+    
+    font-size: 30pt;
+    border-radius: 15px;
+    background: linear-gradient(to top right, rgba(30, 76, 184, 0.109),rgba(83, 9, 255, 0.171));
+    margin: 10px 20px;
+    padding: 30px 5px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    background-blend-mode:multiply;
+    color: white;
+}
+.form h1{position: relative;
+    left: 140px;
+    color: white;
+   
+}
+.form p{
+    display: inline-block;
+}
+.form input{
+    font-size: 26pt;
+    background: rgba(255, 255, 255, 0.356);
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 5px 0px;
+
+}
+.form input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(0, 0, 0, 0.561);
+    opacity: 1; /* Firefox */
+  }
+.form button{
+    font-size: 35pt;
+    border-radius: 15px;
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+    padding: 08px;
+
+
+}
+.form button:hover{
+    font-size: 40;
+    background: linear-gradient(90deg, #f6b640 0%, #ff6600 100%);
+    color: white;
+    cursor: pointer;
+    padding: 17px;
+
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+
+}
+.form:hover{
+    border:2px solid black;
+}

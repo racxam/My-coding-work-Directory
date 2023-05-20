@@ -1,0 +1,2 @@
+var myname= "sumt";
+myname

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid challenge no 2</title>
+    <style>
+        .container{
+
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-gap:15px;
+        }
+        .main{
+            background-color:rgb(255, 189, 6);
+
+            font-size: 23pt;
+        }
+        .items1{
+            grid-row-start: 1;
+            grid-row-end: 54;
+        }
+        .items2{
+            grid-column-start:2;
+            grid-column-end: 6;
+            grid-row-start: 1;
+            grid-row-end: 12;
+
+        }
+        .items3{
+            grid-column-start:2;
+            grid-column-end: 5;
+            grid-row-start: 12;
+            grid-row-end: 48;
+
+        }
+        .items4{
+            grid-column-start:5;
+            grid-column-end: 6;
+            grid-row-start: 12;
+            grid-row-end: 48;
+
+        }
+        .items5{
+            grid-column-start:2;
+            grid-column-end: 6;
+            grid-row-start: 48;
+            grid-row-end: 54;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main items1">Nav</div>
+        <div class="main items2">Header</div>
+        <div class="main items3">Article</div>
+        <div class="main items4">Ad's</div>
+        <div class="main items5">Footer</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "stdio.h": "c",
+        "memory_resource": "cpp",
+        "memory": "cpp",
+        "iosfwd": "cpp",
+        "algorithm": "cpp",
+        "ostream": "cpp"
+    }
+}

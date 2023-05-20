@@ -1,0 +1,8 @@
+table,tr,th,td{
+   border: black 2px solid;
+border-collapse:collapse;
+font-size: 18pt;
+color:white;
+background-color: rgb(194, 30, 153);
+border-spacing: 5px;
+}

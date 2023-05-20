@@ -1,0 +1,52 @@
+<%-- 
+    Document   : Login
+    Created on : 09-May-2023, 10:07:31 am
+    Author     : adity
+--%>
+
+<%@page contentType="text/html" import="java.sql.*"%>
+<html>
+    <head>
+        <style>
+        body{
+        font-family: 'Helvetica';
+        text-align: center;
+        background: teal;
+        }
+        .pwd{
+            color: white;
+            padding-top: 40px; 
+            font-weight: 800;
+        }
+    </style>
+    </head>
+    <body>
+       <!--<h1>Registration JSP Page</h1>-->
+   <%
+       String uname=request.getParameter("txtName");
+       String pass = request.getParameter("txtPass");
+      
+       try{
+   Class.forName("com.mysql.cj.jdbc.Driver");
+   Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/logindb","root","rootroot");
+   PreparedStatement stmt = con.prepareStatement("select txtPass1 from user where txtName=?");
+   stmt.setString(1, uname); 
+   ResultSet rs = stmt.executeQuery();
+   if(rs.next()){
+       if(pass.equals(rs.getString(1)))
+       {
+           out.println("<h1 class='pwd'>LOGIN SUCCESSFULL !</h1>");
+       }else{
+           out.println("<h1 class='pwd'>WRONG PASSWORD !</h1>");
+       }
+       }
+   else{
+   out.println("<h1 class='pwd'>User Name not exist !</h1>");
+   %>
+   <jsp:include page="Register.html" ></jsp:include>
+       <%
+   }
+       }catch(Exception e){out.println(e);}
+  %>
+   </body>
+</html>

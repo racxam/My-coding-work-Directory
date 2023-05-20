@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout without using flex box</title>
+    <style>
+        *{
+            margin-left : 0px;
+            margin-right: 0px;
+            
+        }
+        nav{
+        position:sticky;
+        }
+
+        ul{
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            list-style: none;
+            height: 30pt;
+            padding:10px;
+            text-align: center;
+            border:orangered;
+            border-radius: 25px;;
+            padding-left: 20px;
+            margin: 0;
+            
+
+
+        }
+        li{
+            display: inline;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            padding:5px;
+            font-size: 25pt;
+            text-decoration: underline;
+            
+
+        }
+        li:hover{
+            color:springgreen;
+        }
+        .left{
+            height: 80vh;
+            width:43vw;
+            margin: 10px 1px;
+            background-color: teal;
+            font-size: 30pt;
+            /* display: inline-block; */
+            float:left;
+            border: 5px solid black;
+        }
+        .right{
+            height: 80vh;
+            margin: 10px 1px;
+            border: 5px solid black;
+            width: 43vw;
+            background-color: lightsalmon;
+            font-size: 30pt;
+            /* display: inline-block; */
+            float:right;
+            /* position: absolute; */
+            /* right: 0px; */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li> me</li>
+                <li>LogIn/SignUp</li>
+            </ul>
+        </nav>
+        <body>
+            <div class="left">I am left box</div>
+            <div class="right ">I am right box</div>
+        </body>
+    </header>
+</body>
+</html>

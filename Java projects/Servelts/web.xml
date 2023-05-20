@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<web-app> 
+
+<servlet> 
+<servlet-name>store</servlet-name> 
+<servlet-class>logic</servlet-class> 
+
+</servlet> 
+
+<servlet-mapping> 
+<servlet-name>store</servlet-name> 
+<url-pattern>/store_res</url-pattern> 
+</servlet-mapping> 
+
+</web-app> 

@@ -1,0 +1,25 @@
+
+The Employee name: Sumit
+The Employee id: 20bcg1115
+The Employee date of birth: 10 april 2002
+The Employee salary: 12345
+The Employee joinig date: 11 feb 2022
+
+The Employee name: Ramanujam
+The Employee id: 21bcg1114
+The Employee date of birth: 11 feb 2003
+The Employee salary: 234556
+The Employee joinig date: 31 may 2022
+
+The Employee name: Sumit
+The Employee id: 20bcg1115
+The Employee date of birth: 10 april 2002
+The Employee salary: 1,20,000
+The Employee joinig date: 21 may 2020
+
+The Employee name: Sapoiphile 
+The Employee id: racxamSapio1234
+The Employee date of birth: 12 jan 2020
+The Employee salary: 30,000
+The Employee joinig date: 12 may 2037
+

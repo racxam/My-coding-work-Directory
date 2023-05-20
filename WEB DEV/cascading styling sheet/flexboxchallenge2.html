@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox challenge no 2</title>
+</head>
+<style>
+    *{
+        margin: 5px;
+    }
+    .container{
+      
+        display: flex;
+        flex-direction: row;
+        height: 800px;
+        justify-content:space-evenly;
+
+        
+    }
+    img{
+        width:96%;
+
+
+
+    }
+    .s{
+        border: 2px #D4D2D4 solid;
+        box-shadow: 10px 10px 10px #aaaaaa;
+        height: 760px;
+        width: 340px;
+
+    }
+    p{
+        font-size: 30pt;
+    }
+    .box2{
+        align-self: flex-end;
+        
+    }
+    input{
+        width: 335px;
+        height: 70px;
+        background-color:rgba(255, 140, 0, 0.911);
+        border: 5px black solid;
+        border-radius: 15px;
+        box-shadow: 10px 10px 10px #aaaaaa;
+        font-size: 25pt;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        cursor: pointer;
+
+    }
+    input:hover{
+        background-color:darkorange;
+    }
+
+</style>
+<body>
+   <div class="container">
+       <div class=" s box1">
+        <img src="https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="image1">
+        <br><br>
+        <h1>Seamlessly Visualize Quality</h1><br><br><br><br>
+        <p>Collaboratively administrate empowred markets via plug-and-play networks.</p>
+        <input type="submit" value="Here's How">
+       </div>
+       <div class="s box2">
+        <img src="https://images.pexels.com/photos/142497/pexels-photo-142497.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="image2">
+        <br><br>
+        <h1>Completely Synergize</h1><br><br><br><br><br><br>
+        <p>Collaboratively administrate empowred markets via plug-and-play networks.</p>
+        <input type="submit" value="Here's Why">
+       </div>
+       <div class="s box3">
+           <img src="https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="image3">
+           <br><br>
+           <h1>Dynamically Procrastinate</h1><br><br><br><br>
+           <p>Completey synergize resource taxing relationship via premier niche markets.</p>
+           <input type="submit" value="Read More">
+
+       </div>
+   </div> 
+</body>
+</html>

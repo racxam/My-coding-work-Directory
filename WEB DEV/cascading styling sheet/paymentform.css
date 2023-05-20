@@ -1,0 +1,73 @@
+*{
+    box-sizing:border-box;
+
+}
+.sen{
+    text-align:center;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    color:rgb(0, 0, 0)  ;
+    margin: 15px 30px;
+    
+    
+    padding: 8px;
+}
+.r{
+    background-color: lightseagreen;
+    padding: 15px;
+    padding-left: 30px;
+    border-radius: 20px;
+}
+.sum{
+    background-color: rgb(233, 190, 0);
+    border-radius: 20px;
+    padding: 20px;
+}
+.sp{
+    background-color:rgba(139, 69, 19, 0.151);
+    padding: 20px;
+    border: black;
+    border-radius: 20px;
+    font-family:Righteous, Geneva, Tahoma, sans-serif;
+}
+.rpay{
+    background-color: rgb(233, 190, 0);
+    border-radius: 20px;
+    padding: 5px;
+    
+}
+.card{
+    background-color:rgba(139, 69, 19, 0.151);
+    padding: 20px;
+    border: black;
+    border-radius: 20px;
+    font-family:Righteous, Geneva, Tahoma, sans-serif;
+}
+
+input[type="submit"]{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:22pt;
+    font-weight: bolder;
+    background-color: rgba(78, 9, 240, 0.527);
+    padding: 12px;
+    border-radius: 10px;
+    border:5px solid black;
+    cursor: pointer;
+
+
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],select, textarea{
+    width: 300px;
+    padding: 5px;
+    border:5px solid #ffff;
+    border-radius: 5px;
+    margin: 5px;
+}
+input[type="submit"]:hover{
+background-color: blueviolet;
+}

@@ -1,0 +1,46 @@
+include <iostream>
+using namespace std;
+
+
+class Numbers
+{
+	private:
+		int p;
+		int q;
+	public:
+		
+		void readNumbers(void);
+		void printNumbers(void);
+		int calAddition(void);
+};
+
+void Numbers::readNumbers(void)
+{
+	cout<<"Enter the first number: ";
+	cin>>p;
+	cout<<"Enter the second number: ";
+	cin>>q;	
+}
+
+void Numbers::printNumbers(void)
+{
+	cout<<"p= "<<p<<",q= "<<q<<endl;
+}
+
+int Numbers::calAddition(void)
+{
+	return (p+q);
+}
+
+int main()
+{
+	Numbers num;
+	int add; 
+	num.readNumbers();
+	add=num.calAddition();
+
+	num.printNumbers();
+	cout<<"Addition= "<<add<<endl;
+	
+	return 0;	
+}

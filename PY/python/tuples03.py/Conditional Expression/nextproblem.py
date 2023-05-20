@@ -1,0 +1,5 @@
+strint=input("Enter your message i wants to check it is spam or not")
+print(strint)
+s1=strint.find(" subscribe now")
+s2=strint.find(" pay now")
+s3=strint.find("click on this link")

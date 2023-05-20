@@ -1,0 +1,9 @@
+// jdbc -Java database connectivity
+7 step to connect the java database with java front end
+1. import the package--- java.sql.*;
+2.(a) load the driver----( for different different databases we have different different drivers)
+  (b) register the driver
+3. establish a connection
+4.create the statement (1. normal 2. prepared 3. callable{this is for prepared statements})
+5.execute the query
+6.Exit

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <title>CSS FORM STYLISH</title>
+    <link rel="stylesheet" href="paymentform.css">
+</head>
+
+<body>
+    <div class="hello">
+
+        <div class="r">
+            <h1 class="sen">
+                <u>PAYMENT FORM</u>
+            </h1>
+            <h3 class="sen">Required fields are followed by Asterisk[*]</h3>
+        </div>
+        <hr>
+
+        <h2 class=sum>Contact Information</h2>
+        <div class="sp">
+
+            <p> First Name*: <input type="text" name="name" id="name" placeholder="Sumit" required></p>
+            <p> Middle Name: <input type="text" name="name3" id="name3" placeholder="kumar"></p>
+            <p> Last Name*: <input type="text" name="name2" id="name2" placeholder="Jhaldiyal" required></p>
+            <fieldset>
+                <legend> Gender*:</legend>
+                <p>
+                    <input type="radio" name="gender" id="Male" required>Male
+                    <input type="radio" name="gender" id="Female" required>Female
+                </p>
+            </fieldset>
+            <p>Address: <br><textarea name="address" id="address" cols=190" rows="12"
+                    placeholder="Enter the address"></textarea></p>
+            <p>Email: <input type="email" name="email" id="email" placeholder="xyz@gmail.com"></p>
+            <p>Pincode*: <input type="number" name="pin" id="pin" required placeholder="249122"></p>
+        </div>
+        <hr>
+        <hr>
+        <br><br>
+        <div class="rpay">
+
+            <h2>PAYMENT INFORMATION</h2>
+        </div>
+        <div class="card">
+
+            <img src="/ima/1200px-Visa.svg.png" alt="VISA CARD" width= 50px>
+            <img src="/ima/MClogo-c823e495c5cf455c89ddfb0e17fc7978.jpg" alt="MASTERCARD" width= 50px>
+            <img src="/ima/rupay.jpg" alt="RUPAY CARD" width= 50px>
+            <p>Card type*:
+                <select name="card" id="card" required>
+
+                    <option value="">----Select Card Type----</option>
+                    <option value="VISA ">VISA</option>
+                    <option value="VISA1 ">MASTERCARD</option>
+                    <option value="VISA2 ">RUPAY</option>
+                    <option value="VISA3">AMERICAN EXPRESS</option>
+                </select>
+            </p>
+            <p>Card number*: <input type="number" name="no" id="no" required></p>
+            <p>Exp Date*: <input type="date" name="date" id="date" placeholder></p>
+            <p>CVV*: <input type="number" name="num" id="num"></p>
+        </div>
+        <div id="pay">
+            <br><br>
+            <input type="submit" value="PAY NOW">
+
+
+        </div>
+    </div>
+</body>
+
+</html>

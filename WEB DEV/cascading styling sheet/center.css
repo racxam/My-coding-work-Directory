@@ -1,0 +1,171 @@
+*{
+    margin: 2px;padding: 0;
+
+}
+nav{
+    background-color: black;
+    border: 5px solid black;
+    border-radius: 24px;
+    text-align: right;
+    padding: 10px;
+
+    position: sticky;
+    top:0px;
+
+    z-index: 4;
+}
+a{
+    font-size: 30pt;
+    text-decoration: none;
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight:bolder;
+    color: white;
+    padding:15px;
+}
+.rom{
+    font-size: 34pt;
+    float: left;
+position: relative;
+bottom:5px;
+left:5px;
+}
+a:hover{
+    color:chartreuse;
+}
+.block{
+    height: 10px;
+    width:99vw;
+    background-color:darkorange;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+.contact{
+    height: 90px;
+    width: 99vw;
+    padding-bottom: 20px;
+
+    font-family: 'Quantico', sans-serif;
+    font-size: 25pt;
+    text-align: center;
+    border-radius: 30px;
+    font-weight: 1200;
+
+    background-color:rgb(255, 179, 47);
+    color:rgb(0, 0, 0);
+    font-weight: 1000;}
+   
+    
+    .right
+{
+    height: 500px;
+    width: 600px;
+    
+    border:7px solid black;
+    border-radius: 7px;
+    margin: 2px;
+    position: relative;
+    left:450px;
+    margin:2px;
+    font-size: 24pt;
+    font-family:'Times New Roman', Times, serif;
+    background-color: rgba(0, 0, 139, 0.178);
+
+
+
+}
+main{
+    background-image:url("https://images.pexels.com/photos/188035/pexels-photo-188035.jpeg?cs=srgb&dl=pexels-ingo-joseph-188035.jpg&fm=jpg");
+   height: 800px;
+   width: 1500px;
+   /* background-size: contain; */
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+#name{
+    height: 20px;
+    width:400px;
+    padding: 4px;
+    margin-left: 16px;
+    margin-bottom: 5px;
+    font-size: 18pt;
+    border-radius: 10px;
+    border: 2px solid rgba(129, 127, 126, 0.616);
+    background-color: rgba(255, 255, 255, 0.822);
+}
+#email{
+    height: 20px;
+    width:400px;
+    padding: 4px;
+    margin-left: 13px;
+    font-size: 18pt;
+    position: relative;
+    right: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    border: 2px solid rgba(129, 127, 126, 0.616);
+    background-color: rgba(255, 255, 255, 0.822);
+    
+}
+#message{
+    border: 2px solid rgb(129, 127, 126);
+    /* margin-bottom: 6px; */
+    border-radius: 10px;
+    position: relative;
+    top:6px;
+
+  
+    font-size: 18pt;
+    background-color: rgba(244, 245, 246, 0.445);
+}
+input[type="submit"]{
+    font-family: 'Viga', sans-serif;
+    height: 80px;
+    width: 300px;
+    font-size: 25pt;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding:10px;
+    padding-bottom: 10px;
+    background-color: rgb(253, 85, 7);
+
+}
+.rat{
+    font-size: 15pt;
+    position: relative;
+    left:50px;
+    background-color:rgba(13, 150, 241, 0.603);
+    /* width: 250px; */
+    display: inline;
+    border-radius: 20px;
+    font-weight: bolder;
+}
+#hey:hover{
+    color:rgb(65, 241, 11);
+    cursor: pointer;
+}
+.right:hover{
+    background-color:rgba(255, 255, 255, 0.144);
+}
+footer{
+    background-color: black;
+}
+.foot{
+    height: 40px;
+    width: 100vw;
+
+    color: rgb(255, 255, 255);
+    font-size: 20pt;
+    text-decoration: none;
+
+
+}
+li{
+    display: inline;
+
+
+}
+li:hover{
+    color:deeppink;
+    cursor: pointer;
+}

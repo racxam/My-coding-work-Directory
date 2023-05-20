@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Experiment 10/src/main/webapp/ChangePassword.html&apos; to &apos;ChangePasswd.html&apos;" description="Rename resource &apos;ChangePassword.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/ChangePassword.html" name="ChangePasswd.html" stamp="1684515053596" updateReferences="true"/>
+</session>

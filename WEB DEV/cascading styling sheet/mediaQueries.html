@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS MEDIA QUERIES FOR RESPONSIVE WEBSITE</title>
+        <style>
+            .box1,.box2,.box3,.box4{
+                display:none;
+            }
+          @media only screen and (max-width:400px) {
+              .box1{
+                  background-color: seagreen;
+                  color:white;
+                  font-size: 40pt;
+                  display:block;
+              }
+              
+          }
+          @media only screen and (min-width:401px) and (max-width:700px){
+              .box2{
+                  background-color: rgb(16, 93, 225);
+                  color:rgb(238, 16, 157);
+                  font-size: 50pt;
+                  display:block;
+              }
+              
+          }
+          @media only screen and (min-width:701px) and (max-width:900px){
+              .box3{
+                  background-color: rgb(47, 225, 16);
+                  color:rgb(0, 0, 0);
+                  font-size: 60pt;
+                  display:block;
+              }
+              
+          }
+          @media only screen and (min-width:901px) and (max-width:1500px){
+              .box4{
+                  background-color: rgb(245, 82, 7);
+                  color:rgb(0, 0, 0);
+                  font-size: 65pt;
+                  display:block;
+              }
+              
+          }
+        </style>
+
+          
+
+
+    </head>
+    <body>
+
+<div class="box1">mein ek chutka phone hoon </div>
+<div class="box2">mein thoda badka phone huu</div>
+<div class="box3">mein medium sizewa ka phone huu</div>
+<div class="box4">ARee mein toh desktop computer hoon</div>
+
+    </body>
+</html>

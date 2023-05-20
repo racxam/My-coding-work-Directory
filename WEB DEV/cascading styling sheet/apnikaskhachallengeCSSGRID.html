@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID Challenge no1</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .mainContainer{
+
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            grid-auto-rows: 100vh;
+        }
+        .main1{
+            background-color:orange;
+            margin: 5px;
+            font-size: 23pt;
+
+        }
+        .main{
+            margin: 5px;
+
+            
+        }
+        #mainItems2,#mainItems3,#mainItems4,#mainItems5,#mainItems6{
+            display: grid;
+
+        }
+        #mainItems2{
+
+            grid-template-rows: repeat(2,1fr);
+        }
+        #mainItems3{
+
+            grid-template-rows: repeat(3,1fr);
+        }
+        #mainItems4{
+
+            grid-template-rows: repeat(4,1fr);
+        }
+        #mainItems5{
+
+            grid-template-rows: repeat(6,1fr);
+        }
+        #mainItems6{
+
+            grid-template-rows: repeat(12,1fr);
+        }
+      
+        .c{
+
+            margin-bottom: 8px;
+            background-color:orange;
+            font-size: 23pt;
+            }
+        
+
+        
+    </style>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="main1" id="mainItems1">1</div>
+        <div class="main" id="mainItems2">
+            <div class="c c21">2</div>
+            <div class="c c22">3</div>
+        </div>
+        <div class="main" id="mainItems3">
+            <div class="c c31">4</div>
+            <div class="c c32">5</div>
+            <div class="c c33">6</div>
+        </div>
+        <div class="main" id="mainItems4">
+            <div class="c c41">7</div>
+            <div class="c c42">8</div>
+            <div class="c c43">9</div>
+            <div class="c c44">10</div>
+        </div>
+        <div class="main" id="mainItems5">
+            <div class="c c51">11</div>
+            <div class="c c52">12</div>
+            <div class="c c53">13</div>
+            <div class="c c54">14</div>
+            <div class="c c55">15</div>
+            <div class="c c56">16</div>
+        </div>
+        <div class="main" id="mainItems6">
+            <div class="c c61">17</div>
+            <div class="c c62">18</div>
+            <div class="c c63">19</div>
+            <div class="c c64">20</div>
+            <div class="c c65">21</div>
+            <div class="c c66">22</div>
+            <div class="c c67">23</div>
+            <div class="c c68">24</div>
+            <div class="c c69">25</div>
+            <div class="c c610">26</div>
+            <div class="c c611">27</div>
+            <div class="c c612">28</div>
+        </div>
+    </div>
+    
+</body>
+</html>

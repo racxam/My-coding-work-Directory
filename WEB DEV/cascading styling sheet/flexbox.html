@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+<style>
+     *{
+            margin-left : 0px;
+            margin-right: 0px;
+            
+        }
+        nav{
+        position:sticky;
+        }
+
+        ul{
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            list-style: none;
+            height: 30pt;
+            padding:10px;
+            text-align: center;
+            border:orangered;
+            border-radius: 25px;;
+            padding-left: 20px;
+            margin: 0;
+            
+
+
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+        }
+        li{
+            display: inline;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            padding:5px;
+            font-size: 25pt;
+            text-decoration: underline;
+            
+
+        }
+        li:hover{
+            color:springgreen;
+        }
+        .left{
+            margin: 3px;
+            border: 10px solid black;
+            background-color: dodgerblue;
+            height: 80vh;
+            width: 43vw;
+        }
+        .right{
+            background-color: tan;
+            margin: 3px;
+            border: 10px solid black;
+            height: 80vh;
+            width: 43vw;
+        }
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Contact me</li>
+                <li>LogIn/SignUp</li>
+            </ul>
+        </nav>
+        <div class="container">
+
+            <div class="left">I am left box</div>
+            <div class="right ">I am right box</div>
+        </div>
+        
+    </header>
+</body>
+</html>

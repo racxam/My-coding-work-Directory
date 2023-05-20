@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>JSP With JDBC</title>
+       <style>
+           body{
+               background-color: teal;
+               text-align: center;
+           }
+           div{
+               margin-top: 120px;
+               display: inline-block;
+               width: 400px;
+               height: 50px;
+               background-color: white;
+               font-size: 10px;
+               border-radius: 10px;
+               transition-duration: .4s;
+               box-shadow: 0px 0px 15px rgba(0,0,0,0.3); 
+           }
+           div:hover{
+               transform:scale(1.05);
+           }
+           div:active{
+               transform:scale(.975);             
+           }
+           a{  
+               vertical-align: middle;
+               font-family: 'Helvetica';
+               text-decoration: none;
+           }
+       </style>
+   </head>
+   <body>
+       <div>
+           <h1><a href="Register.html" >New User Register Here</a></h1>
+       </div>
+       <br>
+       <div>
+           <h1><a href="Login.html" >Click Here to Login</a></h1>
+       </div>
+   </body>
+</html>
